@@ -199,6 +199,75 @@
       background-color: rgba(0, 0, 0, 0.3);
       margin-top: auto;
     }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        padding: 60px 20px;
+      }
+
+      header h2 {
+        font-size: 2.5em;
+      }
+
+      .hero-img {
+        max-width: 200px;
+      }
+
+      .section {
+        padding: 0 10px;
+      }
+
+      .cta-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1em;
+      }
+
+      .features {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .planos {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .plano-box {
+        width: 100%;
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h2 {
+        font-size: 2em;
+      }
+
+      .cta-button {
+        font-size: 0.9em;
+      }
+
+      .section h3 {
+        font-size: 1.5em;
+      }
+
+      .feature-box {
+        width: 100%;
+        padding: 15px;
+      }
+
+      .plano-box {
+        width: 100%;
+        padding: 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -267,7 +336,8 @@
       <div class="bot">Perfeito! Qual o melhor horário pra você? Temos vagas hoje às 15h e 17h 😉</div>
     </div>
   </div>
-<div class="section" id="planos">
+
+  <div class="section" id="planos">
     <h3>Planos e Preços</h3>
     <div class="planos">
       <div class="plano-box">
