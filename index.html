@@ -4,48 +4,89 @@
   <meta charset="UTF-8">
   <title>BotExpress | Atendimento com IA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
       background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
       color: #f0f0f0;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
-      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    nav h1 {
+      font-size: 1.8em;
+      color: #ff66c4;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff66c4;
     }
 
     header {
-      padding: 60px 20px 30px;
+      text-align: center;
+      padding: 80px 20px 40px;
     }
 
-    h1 {
-      font-size: 3.2em;
+    header h2 {
+      font-size: 3em;
+      margin-bottom: 10px;
       color: #ff66c4;
-      margin: 0;
     }
 
-    p.subtitle {
-      font-size: 1.3em;
-      color: #ddd;
-      margin-top: 10px;
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
-    .bot-img {
-      max-width: 280px;
-      margin: 40px 0 20px;
+    .hero-img {
+      display: block;
+      margin: 40px auto;
+      max-width: 350px;
+      border-radius: 20px;
     }
 
     .section {
       max-width: 900px;
-      padding: 20px;
-      margin: 0 auto;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    .section h2 {
-      color: #ffb3f3;
+    .section h3 {
       font-size: 1.8em;
+      color: #ffb3f3;
       margin-bottom: 10px;
     }
 
@@ -56,15 +97,15 @@
     }
 
     .cta-button {
+      display: inline-block;
+      margin: 40px auto;
+      padding: 15px 30px;
       background-color: #ff1493;
       color: white;
-      border: none;
-      padding: 15px 30px;
       font-size: 1.1em;
-      border-radius: 25px;
-      margin: 30px 0;
+      border-radius: 30px;
       text-decoration: none;
-      display: inline-block;
+      font-weight: bold;
       transition: background 0.3s;
     }
 
@@ -72,66 +113,55 @@
       background-color: #e01189;
     }
 
-    .links {
-      margin-top: 40px;
-    }
-
-    .links a {
-      color: #a9f1ff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 0.95em;
-    }
-
     footer {
-      margin: 40px 0 20px;
-      font-size: 0.8em;
-      color: #888;
-    }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 2em; }
-      .bot-img { width: 180px; }
-      .cta-button { font-size: 1em; padding: 12px 20px; }
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #aaa;
+      background-color: rgba(0, 0, 0, 0.3);
+      margin-top: auto;
     }
   </style>
 </head>
 <body>
+  <nav>
+    <h1>BotExpress</h1>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#beneficios">Benefícios</a></li>
+      <li><a href="politica_privacidade.html">Política</a></li>
+      <li><a href="termos_servico.html">Termos</a></li>
+    </ul>
+  </nav>
+
   <header>
-    <h1>🤖 BotExpress</h1>
-    <p class="subtitle">Atendimento automatizado com inteligência artificial via WhatsApp</p>
-    <img class="bot-img" src="https://media.giphy.com/media/d2Z9QYzA2aidiWn6/giphy.gif" alt="Assistente Virtual BotExpress">
+    <h2>Atendimento inteligente com IA 24h</h2>
+    <p>Automatize o WhatsApp da sua empresa com um assistente virtual treinado com IA. Aumente suas vendas, reduza custos e melhore o relacionamento com o cliente.</p>
+    <img class="hero-img" src="https://media.giphy.com/media/d2Z9QYzA2aidiWn6/giphy.gif" alt="Robô assistente BotExpress">
+    <a class="cta-button" href="https://wa.me/5511999999999" target="_blank">Quero testar o BotExpress</a>
   </header>
 
-  <div class="section">
-    <h2>O que é a BotExpress?</h2>
+  <div class="section" id="sobre">
+    <h3>O que é a BotExpress?</h3>
     <p>
-      A BotExpress é uma plataforma de atendimento inteligente para pequenas e médias empresas.
-      Nosso robô usa inteligência artificial (OpenAI) para responder clientes automaticamente via WhatsApp e Instagram Direct,
-      tornando o atendimento mais ágil, simpático e eficiente — 24 horas por dia.
+      A BotExpress é uma plataforma de atendimento automatizado via WhatsApp e Instagram. Utilizamos a API oficial do WhatsApp Business e a inteligência artificial da OpenAI para criar um atendimento simpático, ágil e eficiente. Perfeito para pequenas empresas que querem atender melhor gastando menos.
     </p>
   </div>
 
-  <div class="section">
-    <h2>Por que usar?</h2>
+  <div class="section" id="beneficios">
+    <h3>Principais Benefícios</h3>
     <p>
-      - Respostas rápidas e personalizadas<br>
-      - Economia com equipe de atendimento<br>
-      - Disponível 24h/dia<br>
-      - Pode responder perguntas frequentes, agendar horários, vender e até emitir boletos (v2+)<br>
-      - Treinado com o tom da sua marca
+      ✔ Atendimento 24h com IA treinada para sua marca<br>
+      ✔ Redução de custos com equipe humana<br>
+      ✔ Agendamentos automáticos, respostas a perguntas frequentes, suporte a vendas e boletos (v2+)<br>
+      ✔ Integração com outras redes sociais (futuro)<br>
+      ✔ Sem instalação: funcionamos direto no seu número empresarial com ajuda da API oficial
     </p>
-  </div>
-
-  <a class="cta-button" href="https://wa.me/5511999999999" target="_blank">💬 Quero testar o BotExpress</a>
-
-  <div class="links">
-    <a href="politica_privacidade.html">Política de Privacidade</a>
-    <a href="termos_servico.html">Termos de Serviço</a>
   </div>
 
   <footer>
-    © 2025 BotExpress. Todos os direitos reservados.
+    &copy; 2025 BotExpress. Todos os direitos reservados. <br>
+    Desenvolvido com <span style="color:#ff66c4;">&hearts;</span> para empresas humanas com atendimento inteligente.
   </footer>
 </body>
 </html>
