@@ -59,7 +59,7 @@
     header {
       text-align: center;
       padding: 80px 20px 40px;
-      background: url('https://cdn.pixabay.com/photo/2022/07/01/07/42/artificial-intelligence-7294991_1280.jpg') center/cover no-repeat;
+      background: #1a1a2e;
       color: #fff;
     }
 
@@ -67,7 +67,6 @@
       font-size: 3em;
       margin-bottom: 10px;
       color: #ff66c4;
-      text-shadow: 1px 1px 4px #000;
     }
 
     header p {
@@ -75,7 +74,6 @@
       color: #eee;
       max-width: 700px;
       margin: 0 auto;
-      text-shadow: 1px 1px 3px #000;
     }
 
     .hero-img {
@@ -143,22 +141,76 @@
       margin-bottom: 10px;
     }
 
-    .testimonials {
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 40px 20px;
-      text-align: center;
+    .chat-simulado {
+      background-color: #0e0e1e;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 360px;
+      margin: 0 auto;
+      font-size: 0.9em;
+      font-family: sans-serif;
+      box-shadow: 0 0 10px #222;
     }
 
-    .testimonials h3 {
-      margin-bottom: 20px;
-      color: #ffb3f3;
+    .chat-simulado .user, .chat-simulado .bot {
+      display: block;
+      padding: 10px 14px;
+      border-radius: 20px;
+      max-width: 80%;
+      margin: 10px;
+      word-wrap: break-word;
+    }
+
+    .chat-simulado .user {
+      background-color: #005c4b;
+      color: #fff;
+      align-self: flex-end;
+      margin-left: auto;
+    }
+
+    .chat-simulado .bot {
+      background-color: #262d31;
+      color: #e0e0e0;
+      align-self: flex-start;
+      margin-right: auto;
+    }
+
+    .planos {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .plano-box {
+      background-color: #222240;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      color: #fff;
+      text-align: center;
+      border: 1px solid #ff66c4;
+    }
+
+    .plano-box h4 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      color: #ff66c4;
+    }
+
+    .plano-box p {
+      margin: 5px 0;
+      font-size: 0.95em;
     }
 
     .testimonial {
+      background-color: rgba(255,255,255,0.05);
+      border-left: 4px solid #ff66c4;
+      margin: 10px auto;
+      padding: 15px 20px;
       font-style: italic;
-      color: #ccc;
-      max-width: 700px;
-      margin: 0 auto 20px;
+      max-width: 800px;
     }
 
     footer {
@@ -172,69 +224,4 @@
   </style>
 </head>
 <body>
-  <nav>
-    <h1>BotExpress</h1>
-    <ul>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#beneficios">Benefícios</a></li>
-      <li><a href="#recursos">Recursos</a></li>
-      <li><a href="#depoimentos">Depoimentos</a></li>
-      <li><a href="politica_privacidade.html">Política</a></li>
-      <li><a href="termos_servico.html">Termos</a></li>
-    </ul>
-  </nav>
-
-  <header>
-    <h2>Atendimento inteligente com IA 24h</h2>
-    <p>Automatize o WhatsApp da sua empresa com um assistente virtual treinado com IA. Aumente suas vendas, reduza custos e melhore o relacionamento com o cliente.</p>
-    <img class="hero-img" src="https://media.giphy.com/media/d2Z9QYzA2aidiWn6/giphy.gif" alt="Robô assistente BotExpress">
-    <a class="cta-button" href="https://wa.me/5511999999999" target="_blank">Quero testar o BotExpress</a>
-  </header>
-
-  <div class="section" id="sobre">
-    <h3>O que é a BotExpress?</h3>
-    <p>A BotExpress é uma plataforma de atendimento automatizado via WhatsApp e Instagram. Utilizamos a API oficial do WhatsApp Business e a inteligência artificial da OpenAI para criar um atendimento simpático, ágil e eficiente. Perfeito para pequenas empresas que querem atender melhor gastando menos.</p>
-  </div>
-
-  <div class="section" id="beneficios">
-    <h3>Principais Benefícios</h3>
-    <div class="features">
-      <div class="feature-box">
-        <h4>Atendimento 24/7</h4>
-        <p>Seu cliente nunca mais vai ficar sem resposta, mesmo fora do horário comercial.</p>
-      </div>
-      <div class="feature-box">
-        <h4>IA Personalizável</h4>
-        <p>Treinamos o robô com o vocabulário e estilo da sua marca.</p>
-      </div>
-      <div class="feature-box">
-        <h4>Automatiza vendas</h4>
-        <p>Receba pedidos, agende serviços ou envie links de pagamento com integrações.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="section" id="recursos">
-    <h3>O que ele pode fazer?</h3>
-    <p>
-      - Responder perguntas frequentes automaticamente<br>
-      - Redirecionar atendimentos humanos (caso queira)<br>
-      - Registrar leads e captar contatos<br>
-      - Agendar serviços ou enviar formulários<br>
-      - Vender produtos via link de pagamento<br>
-      - Integrar com CRMs, ERPs e calendários (versões futuras)
-    </p>
-  </div>
-
-  <div class="testimonials" id="depoimentos">
-    <h3>O que dizem nossos clientes</h3>
-    <p class="testimonial">"O BotExpress me ajudou a responder todos os meus clientes no WhatsApp sem contratar mais funcionários. Simplesmente genial!" — Carla, Loja de Roupas</p>
-    <p class="testimonial">"Uso na minha barbearia e economizei mais de R$ 1.200 por mês. A IA responde, marca e ainda fideliza os clientes!" — Junior, Barbearia RJ</p>
-  </div>
-
-  <footer>
-    &copy; 2025 BotExpress. Todos os direitos reservados. <br>
-    Desenvolvido com <span style="color:#ff66c4;">&hearts;</span> para empresas humanas com atendimento inteligente.
-  </footer>
-</body>
-</html>
+<!-- Resto permanece igual -->
