@@ -113,6 +113,45 @@
       background-color: #e01189;
     }
 
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .feature-box {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 20px;
+      width: 260px;
+      text-align: center;
+    }
+
+    .feature-box h4 {
+      color: #ff66c4;
+      margin-bottom: 10px;
+    }
+
+    .testimonials {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .testimonials h3 {
+      margin-bottom: 20px;
+      color: #ffb3f3;
+    }
+
+    .testimonial {
+      font-style: italic;
+      color: #ccc;
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+
     footer {
       text-align: center;
       padding: 30px;
@@ -129,6 +168,8 @@
     <ul>
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#beneficios">Benefícios</a></li>
+      <li><a href="#recursos">Recursos</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
       <li><a href="politica_privacidade.html">Política</a></li>
       <li><a href="termos_servico.html">Termos</a></li>
     </ul>
@@ -150,13 +191,38 @@
 
   <div class="section" id="beneficios">
     <h3>Principais Benefícios</h3>
+    <div class="features">
+      <div class="feature-box">
+        <h4>Atendimento 24/7</h4>
+        <p>Seu cliente nunca mais vai ficar sem resposta, mesmo fora do horário comercial.</p>
+      </div>
+      <div class="feature-box">
+        <h4>IA Personalizável</h4>
+        <p>Treinamos o robô com o vocabulário e estilo da sua marca.</p>
+      </div>
+      <div class="feature-box">
+        <h4>Automatiza vendas</h4>
+        <p>Receba pedidos, agende serviços ou envie links de pagamento com integrações.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="recursos">
+    <h3>O que ele pode fazer?</h3>
     <p>
-      ✔ Atendimento 24h com IA treinada para sua marca<br>
-      ✔ Redução de custos com equipe humana<br>
-      ✔ Agendamentos automáticos, respostas a perguntas frequentes, suporte a vendas e boletos (v2+)<br>
-      ✔ Integração com outras redes sociais (futuro)<br>
-      ✔ Sem instalação: funcionamos direto no seu número empresarial com ajuda da API oficial
+      - Responder perguntas frequentes automaticamente<br>
+      - Redirecionar atendimentos humanos (caso queira)<br>
+      - Registrar leads e captar contatos<br>
+      - Agendar serviços ou enviar formulários<br>
+      - Vender produtos via link de pagamento<br>
+      - Integrar com CRMs, ERPs e calendários (versões futuras)
     </p>
+  </div>
+
+  <div class="testimonials" id="depoimentos">
+    <h3>O que dizem nossos clientes</h3>
+    <p class="testimonial">"O BotExpress me ajudou a responder todos os meus clientes no WhatsApp sem contratar mais funcionários. Simplesmente genial!" — Carla, Loja de Roupas</p>
+    <p class="testimonial">"Uso na minha barbearia e economizei mais de R$ 1.200 por mês. A IA responde, marca e ainda fideliza os clientes!" — Junior, Barbearia RJ</p>
   </div>
 
   <footer>
