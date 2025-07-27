@@ -2,96 +2,132 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <title>BotExpress | Atendimento com IA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BotExpress</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #1f005c, #5b0060, #870160);
-      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: #f0f0f0;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      min-height: 100vh;
     }
 
     header {
-      padding: 50px 20px 20px;
+      padding: 60px 20px 30px;
     }
 
     h1 {
-      font-size: 3em;
+      font-size: 3.2em;
+      color: #ff66c4;
+      margin: 0;
+    }
+
+    p.subtitle {
+      font-size: 1.3em;
+      color: #ddd;
+      margin-top: 10px;
+    }
+
+    .bot-img {
+      max-width: 280px;
+      margin: 40px 0 20px;
+    }
+
+    .section {
+      max-width: 900px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      color: #ffb3f3;
+      font-size: 1.8em;
       margin-bottom: 10px;
-      color: #ffb3ff;
     }
 
-    p {
-      font-size: 1.2em;
-      margin-bottom: 40px;
+    .section p {
+      font-size: 1.1em;
+      line-height: 1.7em;
+      color: #e0e0e0;
     }
 
-    .bot {
-      max-width: 300px;
-      margin-bottom: 30px;
-    }
-
-    .links {
-      margin: 30px 0;
-    }
-
-    .links a {
-      color: #fff;
-      background-color: #ff69b4;
-      padding: 12px 24px;
-      margin: 10px;
+    .cta-button {
+      background-color: #ff1493;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.1em;
       border-radius: 25px;
+      margin: 30px 0;
       text-decoration: none;
-      font-weight: bold;
+      display: inline-block;
       transition: background 0.3s;
     }
 
-    .links a:hover {
-      background-color: #ff1493;
+    .cta-button:hover {
+      background-color: #e01189;
+    }
+
+    .links {
+      margin-top: 40px;
+    }
+
+    .links a {
+      color: #a9f1ff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 0.95em;
     }
 
     footer {
-      margin-top: auto;
-      padding: 20px;
-      font-size: 0.9em;
-      opacity: 0.7;
+      margin: 40px 0 20px;
+      font-size: 0.8em;
+      color: #888;
     }
 
     @media (max-width: 600px) {
-      h1 {
-        font-size: 2em;
-      }
-
-      .bot {
-        max-width: 200px;
-      }
-
-      .links a {
-        display: block;
-        margin: 10px auto;
-      }
+      h1 { font-size: 2em; }
+      .bot-img { width: 180px; }
+      .cta-button { font-size: 1em; padding: 12px 20px; }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>🤖 BotExpress</h1>
-    <p>Atendimento automatizado com inteligência artificial <br> para WhatsApp e Instagram</p>
+    <p class="subtitle">Atendimento automatizado com inteligência artificial via WhatsApp</p>
+    <img class="bot-img" src="https://media.giphy.com/media/d2Z9QYzA2aidiWn6/giphy.gif" alt="Assistente Virtual BotExpress">
   </header>
 
-  <!-- Robô animado (substitua o src se quiser outro) -->
-  <img class="bot" src="https://media.giphy.com/media/d2Z9QYzA2aidiWn6/giphy.gif" alt="Robô animado BotExpress">
+  <div class="section">
+    <h2>O que é a BotExpress?</h2>
+    <p>
+      A BotExpress é uma plataforma de atendimento inteligente para pequenas e médias empresas.
+      Nosso robô usa inteligência artificial (OpenAI) para responder clientes automaticamente via WhatsApp e Instagram Direct,
+      tornando o atendimento mais ágil, simpático e eficiente — 24 horas por dia.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Por que usar?</h2>
+    <p>
+      - Respostas rápidas e personalizadas<br>
+      - Economia com equipe de atendimento<br>
+      - Disponível 24h/dia<br>
+      - Pode responder perguntas frequentes, agendar horários, vender e até emitir boletos (v2+)<br>
+      - Treinado com o tom da sua marca
+    </p>
+  </div>
+
+  <a class="cta-button" href="https://wa.me/5511999999999" target="_blank">💬 Quero testar o BotExpress</a>
 
   <div class="links">
     <a href="politica_privacidade.html">Política de Privacidade</a>
     <a href="termos_servico.html">Termos de Serviço</a>
-    <a href="https://wa.me/seunumerodetelefone" target="_blank">Fale no WhatsApp</a>
   </div>
 
   <footer>
